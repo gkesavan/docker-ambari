@@ -1,5 +1,5 @@
-FROM hortonworks/ambari-base:7.2-v7
-MAINTAINER Hortonworks
+FROM hortonworks/ambari-base:7.2-v8
+MAINTAINER Giridharan Kesavan
 
 # add ambari repo
 ADD ambari.repo /etc/yum.repos.d/
