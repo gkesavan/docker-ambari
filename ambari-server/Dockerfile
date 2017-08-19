@@ -1,4 +1,4 @@
-FROM gkesavan/ambari-base:7.2-v8
+FROM gkesavan/docker-ambari:base-7.2-v8
 MAINTAINER Giridharan Kesavan
 
 # add ambari repo
