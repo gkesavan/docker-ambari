@@ -5,7 +5,7 @@ MAINTAINER Giridharan Kesavan
 ADD ambari.repo /etc/yum.repos.d/
 
 # initscripts (service wrapper for servicectl) is need othewise the Ambari is unable to start postgresql
-RUN yum install -y ambari-server && yum clean all
+RUN rpm --rebuilddb; yum install -y ambari-server && yum clean all
 
 # add ambari shell to the image so new users don't need the 1GB java image
 RUN curl -o /tmp/ambari-shell.jar https://s3-eu-west-1.amazonaws.com/maven.sequenceiq.com/releases/com/sequenceiq/ambari-shell/0.1.25/ambari-shell-0.1.25.jar
